@@ -5,7 +5,6 @@ function myAnimal() {
 }
 
 function yourAnimal() {
-animal = cat
   // How can we make sure that this function
   // and the above function both pass?
   // P.S.: You can't just hard-code 'cat' below
@@ -14,13 +13,15 @@ animal = cat
 
 function add2(n) {
   return n + two
+
   // Feel free to move things around!
   const two = 2
 }
 
 var funkyFunction = function() {
-  return "FUNKY!"
-
+  return function() {
+    return "FUNKY!"
+  }
 }
 
 // We want to set theFunk equal to "FUNKY!" using our funkyFunction.
